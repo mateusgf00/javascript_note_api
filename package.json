@@ -16,5 +16,17 @@
     "mongoose": "^5.7.9",
     "morgan": "~1.9.1",
     "nodemon": "^2.0.15"
-  }
+  },
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mateusgf00/javascript_note_api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mateusgf00/javascript_note_api/issues"
+  },
+  "homepage": "https://github.com/mateusgf00/javascript_note_api#readme",
+  "description": ""
 }
