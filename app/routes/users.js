@@ -13,7 +13,7 @@ router.post('/register', async(req,res) =>{
     await user.save();
     res.status(200).json(user);
   }catch(error){
-    res.status(500).json({error: 'Error registering new user'});
+    res.status(500).json({error:error});
   }
 });
 
@@ -23,7 +23,7 @@ router.post('/login', async(req,res) =>{
   try {
     let user = await User.findOne({email});
     if(!user){
-      res.status(401).json({error: 'Incorrect email or password'})
+      res.status(401).json({error:'Incorrect email or password'})
     }else{
       user.isCorrectPassword(password, function(err, same){
         if(!same)
